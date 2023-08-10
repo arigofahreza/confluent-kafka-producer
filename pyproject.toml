@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "confluent-kafka-producer"
+version = "0.1.0"
+description = ""
+authors = ["Arigo.Fahreza <arigo@jkt1.ebdesk.com>"]
+readme = "README.md"
+packages = [{include = "confluent_kafka_producer"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+confluent-kafka = "^2.2.0"
+pydantic = {extras = ["dotenv"], version = "^2.1.1"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api" 
