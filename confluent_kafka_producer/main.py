@@ -6,7 +6,6 @@ __app_name__ = "confluent-kafka-producer"
 __version__ = "0.1.0"
 
 from confluent_kafka_producer.src.service import producer
-from confluent_kafka_producer.src.service.producer import ProducerService
 
 app = typer.Typer()
 app.add_typer(producer.app, name='producer')
